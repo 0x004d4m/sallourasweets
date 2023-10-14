@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Salloura Sweets',
+    'title2' => 'Salloura',
     'description' => 'Salloura Sweets',
     'keywords' => 'Salloura Sweets, Sweets',
     'author' => 'Salloura Sweets',

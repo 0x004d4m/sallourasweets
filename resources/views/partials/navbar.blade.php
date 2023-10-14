@@ -7,7 +7,7 @@
                 <a href="#" data-nav-section="features">{{ __('content.Features') }}</a>
             </div>
             <div class="fh5co-logo">
-                <a href="/">{{ __('content.title') }}</a>
+                <a href="/">{{ __('content.title2') }}</a>
             </div>
             <div class="fh5co-menu-2">
                 <a href="#" data-nav-section="menu">{{ __('content.Menu') }}</a>
