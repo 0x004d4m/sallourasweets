@@ -34,12 +34,12 @@
                                                 {{ $item->price . " " . __('content.currency') }}
                                             </div>
                                         </li>
+                                    </a>
                                         @if ($key == 1)
                                             @php
                                                 break;
                                             @endphp
                                         @endif
-                                    </a>
                                 @endforeach
                             </ul>
                         </div>
