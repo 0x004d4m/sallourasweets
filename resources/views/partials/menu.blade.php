@@ -18,26 +18,28 @@
                             </div>
                             <ul>
                                 @foreach ($category->items as $key => $item)
-                                    <li>
-                                        <div class="fh5co-food-desc">
-                                            <figure>
-                                                <img src="{{ url($item->image) }}" class="img-responsive"
-                                                    alt="{{ $item->name }}">
-                                            </figure>
-                                            <div>
-                                                <h3>{{ $item->name }}</h3>
-                                                <p>{{ $item->description }}</p>
+                                    <a href="/Items/{{ $item->id }}">
+                                        <li>
+                                            <div class="fh5co-food-desc">
+                                                <figure>
+                                                    <img src="{{ url($item->image) }}" class="img-responsive"
+                                                        alt="{{ $item->name }}">
+                                                </figure>
+                                                <div>
+                                                    <h3>{{ $item->name }}</h3>
+                                                    <p>{{ $item->description }}</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="fh5co-food-pricing">
-                                            {{ $item->price . " " . __('content.currency') }}
-                                        </div>
-                                    </li>
-                                    @if ($key == 1)
-                                        @php
-                                            break;
-                                        @endphp
-                                    @endif
+                                            <div class="fh5co-food-pricing">
+                                                {{ $item->price . " " . __('content.currency') }}
+                                            </div>
+                                        </li>
+                                        @if ($key == 1)
+                                            @php
+                                                break;
+                                            @endphp
+                                        @endif
+                                    </a>
                                 @endforeach
                             </ul>
                         </div>
