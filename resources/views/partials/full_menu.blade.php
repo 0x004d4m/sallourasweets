@@ -20,6 +20,7 @@
                                             <div class="fh5co-food-desc">
                                                 <figure>
                                                     <img src="{{ url($item->image) }}" class="img-responsive"
+                                                        style="width: 100%"
                                                         alt="{{ $item->name }}">
                                                 </figure>
                                                 <div>

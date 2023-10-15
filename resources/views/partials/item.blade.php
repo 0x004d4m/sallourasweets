@@ -4,7 +4,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <h2 class="heading to-animate">{{ $Item->name }}</h2>
                 <p class="pricing to-animate">{{ $Item->price . ' ' . __('content.currency') }}</p>
-                <img class=" to-animate" src="{{ url($Item->image) }}" alt="{{ $Item->name }}">
+                <img class="to-animate" src="{{ url($Item->image) }}" alt="{{ $Item->name }}" style="width: 100%">
                 <br>
                 <br>
                 <br>

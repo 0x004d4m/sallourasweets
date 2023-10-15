@@ -13,7 +13,7 @@
                 <div class="col-md-4">
                     <div class="fh5co-event to-animate-2">
                         <h3>{{ $branch->address }}</h3>
-                        <img src="{{ url($branch->image) }}" class="img-responsive" style="padding-top: 10px; padding-bottom: 10px;" alt="{{ $branch->address }}">
+                        <img src="{{ url($branch->image) }}" class="img-responsive" style="padding-top: 10px; padding-bottom: 10px; width: 100%" alt="{{ $branch->address }}">
                         <p style="font-size: xx-large">
                             <a href="tel:{{ $branch->phone }}" class="link-primary"><i class="icon-phone"></i></a>
                             <a href="{{ $branch->location }}" target="_blank" class="link-primary"><i class="icon-location-pin"></i></a>
