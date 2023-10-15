@@ -4,7 +4,7 @@
         <div class="fh5co-text">
             <div class="container">
                 <div class="row">
-                    <h1 style="font-size: 15rem" class="to-animate">{{ __('content.title') }}</h1>
+                    <h1 style="font-size: 10rem" class="to-animate">{{ __('content.title') }}</h1>
                 </div>
             </div>
         </div>
