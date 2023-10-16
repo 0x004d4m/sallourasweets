@@ -2,16 +2,14 @@
     <div class="fh5co-main-nav">
         <div class="container-fluid">
             <div class="fh5co-menu-1">
+                <a href="#">{{ __('content.Menu') }}</a>
+                <a onclick="window.location='{{ url('/') }}'">{{ __('content.Branches') }}</a>
                 <a onclick="window.location='{{ url('/') }}'">{{ __('content.Home') }}</a>
-                <a onclick="window.location='{{ url('/') }}'">{{ __('content.About') }}</a>
-                <a onclick="window.location='{{ url('/') }}'">{{ __('content.Features') }}</a>
             </div>
             <div class="fh5co-logo">
                 <a href="/">{{ __('content.title2') }}</a>
             </div>
             <div class="fh5co-menu-2">
-                <a href="#">{{ __('content.Menu') }}</a>
-                <a onclick="window.location='{{ url('/') }}'">{{ __('content.Branches') }}</a>
                 <div class="dropdown" style="display: inline">
                     <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
@@ -27,6 +25,8 @@
                         @endforeach
                     </ul>
                 </div>
+                <a onclick="window.location='{{ url('/') }}'">{{ __('content.About') }}</a>
+                <a onclick="window.location='{{ url('/') }}'">{{ __('content.Features') }}</a>
             </div>
         </div>
     </div>
