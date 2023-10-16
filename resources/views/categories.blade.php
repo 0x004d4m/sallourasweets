@@ -6,35 +6,29 @@
 <html class="no-js"> <!--<![endif]-->
 @include('partials.head')
 
-<body @if (Backpack\LangFileManager\app\Models\Language::where('active', 1)->where('abbr', Session::get('locale'))->first()->abbr == 'ar') dir="rtl" @else dir="ltr" @endif>
+<body>
     <div id="fh5co-container">
         @include('partials.slider')
-        @include('partials.navbar')
+        @include('partials.navbar2')
         <div id="fh5co-menus" data-section="menu">
             <div class="container">
                 <div class="row text-center fh5co-heading row-padded">
                     <div class="col-md-8 col-md-offset-2">
-                        <h2 class="heading to-animate">{{ __('content.menu_title') }}</h2>
-                        <p class="sub-heading to-animate">{{ __('content.menu_text') }}</p>
+                        <h2 class="heading to-animate">{{ $Category->name }}</h2>
+                        <p class="sub-heading to-animate">{{ $Category->description }}</p>
                     </div>
                 </div>
                 <div class="row row-padded" style="display: flex; justify-content: center;">
-                    @foreach ($Categories as $category)
+                    @foreach ($Items as $item)
                         <div class="col-md-3 col-xs-6 text-center">
-                            <a href="/Categories/{{ $category->id }}">
-                                <img src="{{ url($category->image) }}" style="width: 100%" alt="{{ $category->name }}">
-                                <h3>{{ $category->name }}</h3>
-                            </a>
+                            <img src="{{ url($item->image) }}" style="width: 100%" alt="{{ $item->name }}">
+                            <h3>{{ $item->name }}</h3>
                         </div>
                     @endforeach
                 </div>
             </div>
         </div>
 
-        @include('partials.branches')
-        @include('partials.featured_items')
-        @include('partials.about')
-        @include('partials.testmonials')
     </div>
     @include('partials.footer')
     @include('partials.scripts')

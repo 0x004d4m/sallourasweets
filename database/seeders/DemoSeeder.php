@@ -20,12 +20,8 @@ class DemoSeeder extends Seeder
             ['id' => 4, 'name' => '{"ar":"جوش بيلينجز","en":"Josh Billings"}', 'description' => '{"ar":"لا تعمل قبل الإفطار؛ إذا كنت مضطرًا للعمل قبل الإفطار، اتناول وجبة الإفطار أولًا.","en":"Never work before breakfast; if you have to work before breakfast, eat your breakfast first."}'],
         ]);
         DB::table('categories')->insert([
-            ['id' => 1, 'name' => '{"ar":"المشروبات","en":"Drinks"}', 'description' => '{"ar":"المشروبات","en":"Drinks"}', 'image' => 'template/images/0301-pina-colada.png'],
-            ['id' => 2, 'name' => '{"ar":"الستيك","en":"Steak"}', 'description' => '{"ar":"الستيك","en":"Steak"}', 'image' => 'template/images/0302-steak.png'],
-            ['id' => 3, 'name' => '{"ar":"فواكه","en":"Fruits"}', 'description' => '{"ar":"فواكه","en":"Fruits"}', 'image' => 'template/images/type-1.png'],
-            ['id' => 4, 'name' => '{"ar":"مأكولات بحرية","en":"Sea food"}', 'description' => '{"ar":"مأكولات بحرية","en":"Sea food"}', 'image' => 'template/images/type-2.png'],
-            ['id' => 5, 'name' => '{"ar":"خضار","en":"Vegetables"}', 'description' => '{"ar":"خضار","en":"Vegetables"}', 'image' => 'template/images/type-3.png'],
-            ['id' => 6, 'name' => '{"ar":"لحوم","en":"Meat"}', 'description' => '{"ar":"لحوم","en":"Meat"}', 'image' => 'template/images/type-4.png'],
+            ['id' => 1, 'name' => '{"ar":"المشروبات","en":"Drinks"}', 'description' => '{"ar":"المشروبات","en":"Drinks"}', 'image' => 'template/images/res_img_5.jpg'],
+            ['id' => 2, 'name' => '{"ar":"الستيك","en":"Steak"}', 'description' => '{"ar":"الستيك","en":"Steak"}', 'image' => 'template/images/res_img_4.jpg'],
         ]);
         DB::table('items')->insert([
             ['id' => 1, 'name' => '{"ar":"عصير الأناناس","en":"Pineapple Juice"}', 'description' => '{"ar":"عصير الأناناس","en":"Pineapple Juice"}', 'price' => '17.50', 'image' => 'template/images/res_img_5.jpg', 'category_id' => 1, 'is_featured' => 1],

@@ -16,5 +16,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/set-language/{locale}', [LandingPageController::class, 'setLanguage'])->name('set-language');
 Route::get('/', [LandingPageController::class, 'home'])->name('home');
-Route::get('/menu', [LandingPageController::class, 'menu'])->name('menu');
-Route::get('/Items/{id}', [LandingPageController::class, 'item'])->name('item');
+Route::get('/Categories/{id}', [LandingPageController::class, 'categories'])->name('categories');

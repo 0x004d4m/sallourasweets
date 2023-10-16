@@ -37,20 +37,11 @@ class LandingPageController extends Controller
             "MainImage1" => Image::where('id', 6)->first(),
         ]);
     }
-    public function menu(Request $request)
+    public function categories(Request $request, $id)
     {
-        return view('menu',[
-            "Categories" => Category::get(),
-            "Socials" => Social::get(),
-            "MainImage3" => Image::where('id', 4)->first(),
-            "MainImage2" => Image::where('id', 5)->first(),
-            "MainImage1" => Image::where('id', 6)->first(),
-        ]);
-    }
-    public function item(Request $request, $id)
-    {
-        return view('item',[
-            "Item" => Item::where('id', $id)->first(),
+        return view('categories',[
+            "Category" => Category::where('id', $id)->first(),
+            "Items" => Item::where('category_id', $id)->get(),
             "Socials" => Social::get(),
             "MainImage3" => Image::where('id', 4)->first(),
             "MainImage2" => Image::where('id', 5)->first(),
