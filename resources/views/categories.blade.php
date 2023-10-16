@@ -23,6 +23,7 @@
                         <div class="col-md-3 col-xs-6 text-center">
                             <img src="{{ url($item->image) }}" style="width: 100%" alt="{{ $item->name }}">
                             <h3>{{ $item->name }}</h3>
+                            <h3>{{ $item->price }} {{ __('content.currency') }}</h3>
                         </div>
                     @endforeach
                 </div>
