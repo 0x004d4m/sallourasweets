@@ -6958,7 +6958,7 @@ button.close {
   width: 10px;
   height: 10px;
   margin: 1px;
-  text-indent: -999px;
+  text-indent: 0px;
   border: 1px solid #fff;
   border-radius: 10px;
   cursor: pointer;
