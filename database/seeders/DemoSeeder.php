@@ -42,7 +42,7 @@ class DemoSeeder extends Seeder
             ['id' => 2, 'address' => '{"ar":"الفرع 2","en":"Branch 2"}', 'phone' => '+9620770392802', 'location' => 'https://maps.app.goo.gl/Ap54XcpmmYdfxT6X8', 'image' => 'template/images/res_img_3.jpg', ],
             ['id' => 3, 'address' => '{"ar":"الفرع 3","en":"Branch 3"}', 'phone' => '+9620770392803', 'location' => 'https://maps.app.goo.gl/Ap54XcpmmYdfxT6X8', 'image' => 'template/images/res_img_3.jpg', ],
         ]);
-        DB::ta([
+        DB::table('socials')->insert([
             ['id' => 1, 'icon' => 'icon-facebook', 'url' => 'https://facebook.com',],
             ['id' => 2, 'icon' => 'icon-instagram', 'url' => 'https://instagram.com',],
             ['id' => 3, 'icon' => 'icon-youtube', 'url' => 'https://youtube.com',],
