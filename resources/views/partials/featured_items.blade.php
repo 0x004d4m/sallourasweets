@@ -1,4 +1,4 @@
-<div id="fh5co-featured" data-section="features">
+<div id="fh5co-featured" data-section="features" dir="ltr">
     <div class="container">
         <div class="row text-center fh5co-heading row-padded">
             <div class="col-md-8 col-md-offset-2">

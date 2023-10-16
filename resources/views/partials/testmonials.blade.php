@@ -1,4 +1,4 @@
-<div id="fh5co-sayings">
+<div id="fh5co-sayings" dir="ltr">
     <div class="container">
         <div class="row to-animate">
             <div class="flexslider">
