@@ -6,7 +6,7 @@
 <html class="no-js"> <!--<![endif]-->
 @include('partials.head')
 
-<body>
+<body @if (Backpack\LangFileManager\app\Models\Language::where('active', 1)->where('abbr', Session::get('locale'))->first()->abbr == 'ar') dir="rtl" @else dir="ltr" @endif>
     <div id="fh5co-container">
         @include('partials.slider')
         @include('partials.navbar2')
