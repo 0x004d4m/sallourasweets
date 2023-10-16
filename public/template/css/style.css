@@ -10,7 +10,10 @@ body {
   font-size: 18px;
   font-weight: 300;
   line-height: 2;
-  color: #5e493a;
+  color: #000;
+  background-image: url("../images/IMG_5078.JPG");
+  background-position: top;
+  background-size: contain;
 }
 body.fh5co-overflow {
   overflow-x: auto;
@@ -190,7 +193,7 @@ p {
  */
 #fh5co-home {
   min-height: 700px;
-  background: #fff url(../images/loader.gif) no-repeat center center;
+  background: #000 url(../images/loader.gif) no-repeat center center;
 }
 #fh5co-home .flexslider {
   border: none;
@@ -213,7 +216,7 @@ p {
   font-size: 300px;
   font-weight: 700;
   font-style: italic;
-  color: #fff;
+  color: #000;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -230,7 +233,7 @@ p {
   font-weight: 300;
   font-size: 40px;
   letter-spacing: 2px;
-  color: #fff;
+  color: #000;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -390,7 +393,6 @@ p {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
-  background: #e6e6e6;
   width: 100%;
 }
 #fh5co-about .fh5co-2col {
@@ -404,7 +406,6 @@ p {
 #fh5co-about .fh5co-text {
   padding: 2em 6em;
   text-align: left;
-  background: #130d08 url(../images/wood_1.png) repeat;
 }
 @media screen and (max-width: 1200px) {
   #fh5co-about .fh5co-text {
@@ -416,7 +417,7 @@ p {
 }
 #fh5co-about .fh5co-text .heading {
   margin-bottom: 30px;
-  color: #fff;
+  color: #000;
   font-style: italic;
   font-weight: 300;
   position: relative;
@@ -435,7 +436,7 @@ p {
 }
 #fh5co-about .fh5co-text p {
   line-height: 2;
-  color: #a99c92;
+  color: #000;
 }
 #fh5co-about .fh5co-text p span.firstcharacter {
   float: left;
@@ -448,7 +449,7 @@ p {
   font-style: italic;
   top: -20px;
   position: relative;
-  color: #fff;
+  color: #000;
   font-family: "Playfair Display", serif;
 }
 #fh5co-about .fh5co-bg {
@@ -538,7 +539,6 @@ p {
 
 #fh5co-featured {
   padding: 7em 0;
-  background: #130d08 url(../images/wood_1.png) repeat;
 }
 @media screen and (max-width: 768px) {
   #fh5co-featured {
@@ -548,7 +548,7 @@ p {
 #fh5co-featured .fh5co-heading .heading {
   position: relative;
   padding-top: 30px !important;
-  color: #fff;
+  color: #000;
 }
 #fh5co-featured .fh5co-heading .heading:before, #fh5co-featured .fh5co-heading .heading::before {
   height: 64px;
@@ -562,7 +562,7 @@ p {
   margin-left: -32px;
 }
 #fh5co-featured .fh5co-heading .sub-heading {
-  color: #a99c92;
+  color: #000;
 }
 #fh5co-featured .fh5co-grid {
   display: -webkit-box;
@@ -783,7 +783,7 @@ p {
   margin-left: -32px;
 }
 #fh5co-menus .fh5co-heading .sub-heading {
-  color: #a99c92;
+  color: #000;
 }
 #fh5co-menus .fh5co-food-menu {
   float: left;
@@ -895,7 +895,7 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
   z-index: 9;
 }
 #fh5co-events > .container {
@@ -905,7 +905,7 @@ p {
 #fh5co-events .fh5co-heading .heading {
   position: relative;
   padding-top: 30px !important;
-  color: #fff;
+  color: #000;
 }
 #fh5co-events .fh5co-heading .heading:before, #fh5co-events .fh5co-heading .heading::before {
   height: 64px;
@@ -919,7 +919,7 @@ p {
   margin-left: -24px;
 }
 #fh5co-events .fh5co-heading .sub-heading {
-  color: #a99c92;
+  color: #000;
 }
 @media screen and (max-width: 768px) {
   #fh5co-events {
@@ -1013,7 +1013,7 @@ p {
   margin-left: -24px;
 }
 #fh5co-contact .fh5co-heading .sub-heading {
-  color: #a99c92;
+  color: #000;
 }
 #fh5co-contact .fh5co-social {
   padding: 0;
@@ -1047,7 +1047,7 @@ p {
 
 #fh5co-footer {
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  /* background: rgba(0, 0, 0, 0.9); */
   padding: 7em 0;
   z-index: 1;
   font-size: 14px;
@@ -1194,7 +1194,7 @@ p {
   *display: inline;
   width: 30px;
   height: 2px;
-  color: #fff;
+  color: #000;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
@@ -1205,7 +1205,7 @@ p {
   content: '';
   width: 30px;
   height: 2px;
-  background: #fff;
+  background: #000;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -1307,7 +1307,7 @@ p {
 #fh5co-type h3 {
   margin-bottom: 30px;
   font-style: italic;
-  color: #fff;
+  color: #000;
   font-size: 40px;
   text-align: center;
   padding-top: 110px;

@@ -26,7 +26,6 @@ class LandingPageController extends Controller
         return view('welcome',[
             "Branches" => Branch::get(),
             "Categories" => Category::get(),
-            "FeateredCategories" => Category::where('is_featured', 1)->get(),
             "FeateredItems" => Item::where('is_featured', 1)->get(),
             "Socials" => Social::get(),
             "Testmonials" => Testmonial::get(),

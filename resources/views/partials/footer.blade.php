@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row row-padded">
             <div class="col-md-12 text-center">
-                <p class="to-animate">{!! __('content.footer') !!}</p>
+                <p class="to-animate" style="color: black">{!! __('content.footer') !!}</p>
             </div>
         </div>
         <div class="row">

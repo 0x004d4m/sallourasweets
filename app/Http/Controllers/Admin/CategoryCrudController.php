@@ -25,7 +25,6 @@ class CategoryCrudController extends CrudController
         $this->crud->column('name')->label(__('admin.name'))->type('text');
         $this->crud->column('description')->label(__('admin.description'))->type('text');
         $this->crud->column('image')->label(__('admin.image'))->type('image');
-        $this->crud->column('is_featured')->label(__('admin.is_featured'))->type('boolean');
     }
 
     protected function setupCreateOperation()
@@ -35,7 +34,6 @@ class CategoryCrudController extends CrudController
         $this->crud->field('name')->label(__('admin.name'))->type('text');
         $this->crud->field('description')->label(__('admin.description'))->type('text');
         $this->crud->field('image')->label(__('admin.image'))->type('image');
-        $this->crud->field('is_featured')->label(__('admin.is_featured'))->type('boolean');
     }
 
     protected function setupUpdateOperation()

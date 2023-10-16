@@ -8,12 +8,11 @@
         <div id="fh5co-container">
             @include('partials.slider')
             @include('partials.navbar')
-            @include('partials.about')
-            @include('partials.testmonials')
-            @include('partials.featured_items')
-            @include('partials.featured_categories')
             @include('partials.menu')
             @include('partials.branches')
+            @include('partials.featured_items')
+            @include('partials.about')
+            @include('partials.testmonials')
         </div>
         @include('partials.footer')
         @include('partials.scripts')

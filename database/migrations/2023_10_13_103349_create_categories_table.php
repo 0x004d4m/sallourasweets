@@ -16,7 +16,6 @@ return new class extends Migration
             $table->json('name');
             $table->json('description')->nullable();
             $table->string('image');
-            $table->boolean('is_featured')->default(false);
             $table->timestamps();
             $table->softDeletes();
         });

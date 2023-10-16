@@ -19,7 +19,7 @@ class Category extends Model
     use SoftDeletes;
 
     protected $table = 'categories';
-    protected $fillable = ['name', 'description', 'image', 'is_featured'];
+    protected $fillable = ['name', 'description', 'image'];
     protected $translatable = ['name', 'description'];
 
     public function items()
