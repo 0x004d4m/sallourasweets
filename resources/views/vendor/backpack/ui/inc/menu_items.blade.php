@@ -32,3 +32,5 @@
 </li>
 
 {{-- <li class='nav-item'><a class='nav-link' href='{{ backpack_url('log') }}'><i class='nav-icon la la-terminal'></i> Logs</a></li> --}}
+
+<x-backpack::menu-item title="Policies" icon="la la-question" :link="backpack_url('policy')" />

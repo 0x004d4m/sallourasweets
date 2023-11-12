@@ -1,23 +1,18 @@
-<!-- jQuery -->
-<script src="{{ url('template/js/jquery.min.js') }}"></script>
-<!-- jQuery Easing -->
-<script src="{{ url('template/js/jquery.easing.1.3.js') }}"></script>
-<!-- Bootstrap -->
-<script src="{{ url('template/js/bootstrap.min.js') }}"></script>
-<!-- Bootstrap DateTimePicker -->
-<script src="{{ url('template/js/moment.js') }}"></script>
-<script src="{{ url('template/js/bootstrap-datetimepicker.min.js') }}"></script>
-<!-- Waypoints -->
-<script src="{{ url('template/js/jquery.waypoints.min.js') }}"></script>
-<!-- Stellar Parallax -->
-<script src="{{ url('template/js/jquery.stellar.min.js') }}"></script>
-
-<!-- Flexslider -->
-<script src="{{ url('template/js/jquery.flexslider-min.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-    $(function() {
-        $('#date').datetimepicker();
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const offcanvas = document.querySelector('#offcanvasExample');
+            const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
+            bsOffcanvas.hide();
+
+            const targetId = this.getAttribute('href');
+
+            offcanvas.addEventListener('hidden.bs.offcanvas', function() {
+                window.scrollTo(0, document.querySelector(targetId).offsetTop);
+            });
+        });
     });
 </script>
-<!-- Main JS -->
-<script src="{{ url('template/js/main.js') }}"></script>

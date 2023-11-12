@@ -18,16 +18,17 @@
                         <p class="sub-heading to-animate">{{ __('content.menu_text') }}</p>
                     </div>
                 </div>
+                @foreach ($Categories as $category)
                 <div class="row row-padded" style="display: flex; justify-content: center;">
-                    @foreach ($Categories as $category)
-                        <div class="col-md-3 col-xs-6 text-center">
-                            <a href="/Categories/{{ $category->id }}">
-                                <img src="{{ url($category->image) }}" style="width: 100%" alt="{{ $category->name }}">
-                                <h3>{{ $category->name }}</h3>
-                            </a>
-                        </div>
-                    @endforeach
+                    <div class="col-sm-6 col-md-6 text-center">
+                        <a href="/Categories/{{ $category->id }}">
+                            <img src="{{ url($category->image) }}" style="width: 100%" alt="{{ $category->name }}">
+                            <h3>{{ $category->name }}</h3>
+                        </a>
+                        <a href="/Categories/{{ $category->id }}" class="btn btn-primary">{{ __('content.see_more') }}</a>
+                    </div>
                 </div>
+                    @endforeach
             </div>
         </div>
 

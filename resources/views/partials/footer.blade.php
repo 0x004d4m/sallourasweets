@@ -1,18 +1,16 @@
-<div id="fh5co-footer">
-    <div class="container">
-        <div class="row row-padded">
-            <div class="col-md-12 text-center">
-                <p class="to-animate" style="color: black">{!! __('content.footer') !!}</p>
-            </div>
+<footer class="footer mt-5 py-3">
+    <div class="container text-center">
+        <img src="your-logo.png" alt="Logo" class="mb-3" style="height: 50px;">
+        <br>
+        {!! __('content.footer') !!}
+        <div class="mb-3">
+            @foreach ($Socials as $Social)
+                <a href="{{ $Social->url }}" class="text-white me-2"><i class="{{ $Social->icon }}"></i></a>
+            @endforeach
         </div>
-        <div class="row">
-            <div class="col-md-12 text-center to-animate-2">
-                <ul class="fh5co-social">
-                    @foreach ($Socials as $Social)
-                        <li class="to-animate-2"><a href="{{ $Social->url }}" target="_blank"><i class="{{ $Social->icon }}"></i></a></li>
-                    @endforeach
-                </ul>
-            </div>
+        <div>
+            <a href="{{ url('privacy') }}" class="text-white me-3">{!! __('content.privacies') !!}</a>
+            <a href="{{ url('terms') }}" class="text-white">{!! __('content.terms') !!}</a>
         </div>
     </div>
-</div>
+</footer>

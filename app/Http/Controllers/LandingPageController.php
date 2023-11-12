@@ -6,6 +6,7 @@ use App\Models\Branch;
 use App\Models\Category;
 use App\Models\Image;
 use App\Models\Item;
+use App\Models\Policy;
 use App\Models\Social;
 use App\Models\Testmonial;
 use Backpack\LangFileManager\app\Models\Language;
@@ -23,7 +24,7 @@ class LandingPageController extends Controller
     }
     public function home(Request $request)
     {
-        return view('welcome',[
+        return view('welcome2',[
             "Branches" => Branch::get(),
             "Categories" => Category::get(),
             "FeateredItems" => Item::where('is_featured', 1)->get(),
@@ -35,6 +36,40 @@ class LandingPageController extends Controller
             "MainImage3" => Image::where('id', 4)->first(),
             "MainImage2" => Image::where('id', 5)->first(),
             "MainImage1" => Image::where('id', 6)->first(),
+        ]);
+    }
+    public function privacy(Request $request)
+    {
+        return view('policy',[
+            "Branches" => Branch::get(),
+            "Categories" => Category::get(),
+            "FeateredItems" => Item::where('is_featured', 1)->get(),
+            "Socials" => Social::get(),
+            "Testmonials" => Testmonial::get(),
+            "BranchesImage" => Image::where('id', 1)->first(),
+            "FeaturedCategoriesImage" => Image::where('id', 2)->first(),
+            "AboutImage" => Image::where('id', 3)->first(),
+            "MainImage3" => Image::where('id', 4)->first(),
+            "MainImage2" => Image::where('id', 5)->first(),
+            "MainImage1" => Image::where('id', 6)->first(),
+            "Policy" => Policy::where('id', 1)->first(),
+        ]);
+    }
+    public function terms(Request $request)
+    {
+        return view('policy',[
+            "Branches" => Branch::get(),
+            "Categories" => Category::get(),
+            "FeateredItems" => Item::where('is_featured', 1)->get(),
+            "Socials" => Social::get(),
+            "Testmonials" => Testmonial::get(),
+            "BranchesImage" => Image::where('id', 1)->first(),
+            "FeaturedCategoriesImage" => Image::where('id', 2)->first(),
+            "AboutImage" => Image::where('id', 3)->first(),
+            "MainImage3" => Image::where('id', 4)->first(),
+            "MainImage2" => Image::where('id', 5)->first(),
+            "MainImage1" => Image::where('id', 6)->first(),
+            "Policy" => Policy::where('id', 2)->first(),
         ]);
     }
     public function categories(Request $request, $id)

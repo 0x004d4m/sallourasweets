@@ -1,7 +1,14 @@
-<div id="fh5co-about" data-section="about">
-    <div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url({{ url($AboutImage->image) }})"></div>
-    <div class="fh5co-2col fh5co-text">
-        <h2 class="heading to-animate">{{ __('content.about_title') }}</h2>
-        <p class="to-animate">{{ __('content.about_text') }}</p>
+<div class="row px-5 py-5 bg-y" id="about">
+    <div class="col-12">
+        <div class="row px-5 py-5">
+            <div class="col-md-6 pt-5">
+                <h2 class="text-start">{{ __('content.about_title') }}</h2>
+                <p class="text-start">{{ __('content.about_text') }}</p>
+            </div>
+            <div class="col-md-6">
+                <img src="{{ url($AboutImage->image) }}" class="img-fluid rounded-start"
+                    alt="{{ __('content.about_title') }}">
+            </div>
+        </div>
     </div>
 </div>

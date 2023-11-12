@@ -23,4 +23,7 @@ return [
     'currency' => 'JOD',
     'footer' => '&copy; All Rights Reserved | Salloura Sweets 2023',
     'more' => 'More',
+    'see_more' => 'See More',
+    'privacies' => 'Privacy Policy',
+    'terms' => 'Terms And Conditions',
 ];

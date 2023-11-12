@@ -18,33 +18,92 @@
     <meta name="twitter:url" content="" />
     <meta name="twitter:card" content="" />
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bs-primary: #fb6e14;
+            /* Your new primary color */
+            --bs-primary-rgb: 251, 108, 19;
+            /* Your new primary color */
+        }
 
-    <link
-        href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic'
-        rel='stylesheet' type='text/css'>
+        .btn-primary,
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background-color: var(--bs-primary);
+            border-color: var(--bs-primary);
+        }
 
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="{{ url('template/css/animate.css') }}">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="{{ url('template/css/icomoon.css') }}">
-    <!-- Simple Line Icons -->
-    <link rel="stylesheet" href="{{ url('template/css/simple-line-icons.css') }}">
-    <!-- Datetimepicker -->
-    <link rel="stylesheet" href="{{ url('template/css/bootstrap-datetimepicker.min.css') }}">
-    <!-- Flexslider -->
-    <link rel="stylesheet" href="{{ url('template/css/flexslider.css') }}">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="{{ url('template/css/bootstrap.css') }}">
+        .btn-outline-primary {
+            --bs-btn-color: var(--bs-primary);
+            --bs-btn-border-color: var(--bs-primary);
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: var(--bs-primary);
+            --bs-btn-hover-border-color: var(--bs-primary);
+            --bs-btn-focus-shadow-rgb: 13, 110, 253;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: var(--bs-primary);
+            --bs-btn-active-border-color: var(--bs-primary);
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: var(--bs-primary);
+            --bs-btn-disabled-bg: transparent;
+            --bs-btn-disabled-border-color: var(--bs-primary);
+            --bs-gradient: none;
+        }
 
-    <link rel="stylesheet" href="{{ url('template/css/style.css') }}">
+        .navbar-toggler {
+            border-color: var(--bs-primary);
+        }
 
-    <!-- Modernizr JS -->
-    <script src="{{ url('template/js/modernizr-2.6.2.min.js') }}"></script>
-    <!-- FOR IE9 below -->
-    <!--[if lt IE 9]>
- <script src="js/respond.min.js"></script>
- <![endif]-->
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(40, 167, 69, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
 
+        .text-primary {
+            color: var(--bs-primary);
+        }
+
+        a {
+            color: rgba(var(--bs-primary-rgb), var(--bs-link-opacity, 0.8));
+            text-decoration: underline;
+        }
+
+        /* Additional styles can be added here */
+        html {
+            scroll-behavior: smooth;
+            /* color: #fb6e14; */
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif !important;
+        }
+
+        .bg-y {
+            background-image: url('{{ url('template/images/yellow.jpg') }}');
+        }
+
+        .navbar {
+            background-image: url('{{ url('template/images/red.jpg') }}');
+            /* Add your background image URL here */
+            background-repeat: repeat;
+        }
+
+        .navbar-brand img {
+            height: 30px;
+            /* Adjust the size of your logo */
+        }
+
+        .footer {
+            background-image: url('{{ url('template/images/red.jpg') }}');
+            /* Add your background image URL here */
+            background-repeat: repeat;
+            color: white;
+            /* Adjust text color as needed */
+        }
+    </style>
 </head>

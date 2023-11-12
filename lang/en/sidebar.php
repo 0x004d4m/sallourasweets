@@ -13,6 +13,6 @@ return [
     'item' => 'items',
     'social' => 'socials',
     'branch' => 'branches',
-    'lang' => 'language',
+    'lang' => 'Language',
     'images' => 'images',
 ];
