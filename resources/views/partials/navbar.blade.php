@@ -11,11 +11,11 @@
         <div class="offcanvas-body">
             <div>
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item"><a type="button" class="nav-link" href="#carouselExampleSlidesOnly">{{ __('content.Home') }}</a></li>
-                    <li class="nav-item"><a type="button" class="nav-link" href="#menu">{{ __('content.Menu') }}</a></li>
-                    <li class="nav-item"><a type="button" class="nav-link" href="#branches">{{ __('content.Branches') }}</a></li>
-                    <li class="nav-item"><a type="button" class="nav-link" href="#features">{{ __('content.Features') }}</a></li>
-                    <li class="nav-item"><a type="button" class="nav-link" href="#about">{{ __('content.About') }}</a></li>
+                    <li class="nav-item"><a type="button" class="nav-link slide" href="#carouselExampleSlidesOnly">{{ __('content.Home') }}</a></li>
+                    <li class="nav-item"><a type="button" class="nav-link slide" href="#menu">{{ __('content.Menu') }}</a></li>
+                    <li class="nav-item"><a type="button" class="nav-link slide" href="#branches">{{ __('content.Branches') }}</a></li>
+                    <li class="nav-item"><a type="button" class="nav-link slide" href="#features">{{ __('content.Features') }}</a></li>
+                    <li class="nav-item"><a type="button" class="nav-link slide" href="#about">{{ __('content.About') }}</a></li>
                 </ul>
             </div>
             <div class="dropdown mt-3">

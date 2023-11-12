@@ -22,9 +22,11 @@ return [
     'url' => 'الرابط',
     'image' => 'صورة',
     'images' => 'الصور',
-    'icon_hint' => '<span dir="rtl">اذهب الى <b><a class="link-primary" href="https://simplelineicons.github.io" target="_blank">الايقونات</a></b> وانسخ النص بجانب الايقونه المراد عرضها. مثال: icon-facebook</span>',
+    'icon_hint' => '<span dir="rtl">اذهب الى <b><a class="link-primary" href="https://fontawesome.com/v4/icons/" target="_blank">الايقونات</a></b> وانسخ النص بجانب الايقونه المراد عرضها. مثال: fa fa-facebook</span>',
     'is_featured' => 'مميزة',
     'policy' => 'سياسة',
     'policies' => 'السياسات',
     'text' => 'النص',
+    'counter' => 'عداد',
+    'counters' => 'العدادات',
 ];

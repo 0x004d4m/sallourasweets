@@ -1,6 +1,6 @@
 <div class="row px-5 py-5 bg-y" id="features">
     <div class="col-12">
-        <div class="row text-center justify-content-center">
+        <div class="row text-center justify-content-center animate-on-scroll">
             <div class="col-md-12">
                 <h2 class="heading">{{ __('content.featured_items_title') }}</h2>
                 <p class="sub-heading">{{ __('content.featured_items_text') }}</p>
@@ -9,7 +9,7 @@
         <div class="row justify-content-center">
             @foreach ($FeateredItems as $key => $item)
                 @if ($key % 2 == 0)
-                    <div class="col-md-6">
+                    <div class="col-md-6 animate-on-scroll">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4 text-center">
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                 @else
-                    <div class="col-md-6">
+                    <div class="col-md-6 animate-on-scroll">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-8">

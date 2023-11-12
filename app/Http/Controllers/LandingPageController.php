@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Branch;
 use App\Models\Category;
+use App\Models\Counter;
 use App\Models\Image;
 use App\Models\Item;
 use App\Models\Policy;
@@ -36,6 +37,7 @@ class LandingPageController extends Controller
             "MainImage3" => Image::where('id', 4)->first(),
             "MainImage2" => Image::where('id', 5)->first(),
             "MainImage1" => Image::where('id', 6)->first(),
+            "Counters" => Counter::get(),
         ]);
     }
     public function privacy(Request $request)
@@ -81,6 +83,7 @@ class LandingPageController extends Controller
             "MainImage3" => Image::where('id', 4)->first(),
             "MainImage2" => Image::where('id', 5)->first(),
             "MainImage1" => Image::where('id', 6)->first(),
+            "Counters" => Counter::get(),
         ]);
     }
 }

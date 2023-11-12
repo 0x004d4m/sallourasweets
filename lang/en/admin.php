@@ -22,8 +22,10 @@ return [
     'url' => 'url',
     'image' => 'image',
     'images' => 'images',
-    'icon_hint' => 'Go To <b><a class="link-primary" href="https://simplelineicons.github.io" target="_blank">Icons</a></b> and copy the text next to the icon you want to display. Example: icon-facebook',
+    'icon_hint' => 'Go To <b><a class="link-primary" href="https://fontawesome.com/v4/icons/" target="_blank">Icons</a></b> and copy the text next to the icon you want to display. Example: fa fa-facebook',
     'policy' => 'policy',
     'policies' => 'policies',
     'text' => 'text',
+    'counter' => 'counter',
+    'counters' => 'counters',
 ];

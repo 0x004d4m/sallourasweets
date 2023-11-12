@@ -1,6 +1,6 @@
 <div id="row px-5 py-5">
     <div class="col-12">
-        <div id="cardCarousel" class="carousel carousel-dark slide  bg-y" data-bs-ride="carousel" data-bs-touch="true">
+        <div id="cardCarousel" class="carousel carousel-dark slide animate-on-scroll bg-y" data-bs-ride="carousel" data-bs-touch="true">
             <div class="row justify-content-center">
                 <div class="col-10">
                     <!-- Carousel indicators -->
