@@ -19,3 +19,4 @@ Route::get('/', [LandingPageController::class, 'home'])->name('home');
 Route::get('/privacy', [LandingPageController::class, 'privacy'])->name('privacy');
 Route::get('/terms', [LandingPageController::class, 'terms'])->name('terms');
 Route::get('/Categories/{id}', [LandingPageController::class, 'categories'])->name('categories');
+Route::get('/Search', [LandingPageController::class, 'search'])->name('search');
