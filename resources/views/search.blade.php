@@ -9,12 +9,15 @@
         @include('partials.navbar')
         @include('partials.slider')
         <div class="row px-5 py-5 text-center justify-content-center">
-            @foreach ($Categories as $item)
+            @foreach ($Categories as $category)
                 <div class="col-md-4 text-center p-3">
-                    <img src="{{ url($item->image) }}" class="img-fluid rounded"
-                            alt="{{ $item->name }}">
-                    <h3 class=" pt-3">{{ $item->name }}</h3>
-                    <h3>{{ $item->price }} {{ __('content.currency') }}</h3>
+                    <a href="/Categories/{{ $category->id }}">
+                        <img src="{{ url($category->image) }}" class="img-responsive" alt="{{ $category->name }}">
+                        <br>
+                        <br>
+                        <h3>{{ $category->name }}</h3>
+                    </a>
+                    <a href="/Categories/{{ $category->id }}" class="btn btn-primary">{{ __('content.see_more') }}</a>
                 </div>
             @endforeach
             @foreach ($Items as $item)
