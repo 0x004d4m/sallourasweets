@@ -12,7 +12,7 @@
             @foreach ($Categories as $category)
                 <div class="col-md-4 text-center p-3">
                     <a href="/Categories/{{ $category->id }}">
-                        <img src="{{ url($category->image) }}" class="img-responsive" alt="{{ $category->name }}">
+                        <img src="{{ url($category->image) }}" class="img-fluid rounded" alt="{{ $category->name }}">
                         <br>
                         <br>
                         <h3>{{ $category->name }}</h3>
