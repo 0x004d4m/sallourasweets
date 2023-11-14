@@ -1,4 +1,4 @@
-<nav class="navbar p-2">
+<nav class="navbar my-0 py-0">
     <a class="btn btn-outline-primary p-3" id="offcanvasBtn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
         <span class="fa fa-bars"></span>
     </a>
@@ -33,8 +33,8 @@
         </div>
     </div>
 
-    <a class="navbar-brand mx-auto" href="{{ url('/') }}">
-        <img src="your-logo.png" alt="Logo">
+    <a class="navbar-brand mx-auto my-0 py-0" href="{{ url('/') }}">
+        <img src="{{ url('/template/images/logo.png') }}" alt="Logo">
     </a>
 
     <button class="navbar-toggler p-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch"

@@ -95,7 +95,8 @@
         }
 
         .navbar-brand img {
-            height: 30px;
+            top: 0;
+            height: 150px;
             /* Adjust the size of your logo */
         }
 

@@ -1,6 +1,6 @@
-<footer class="footer mt-5 py-3 animate-on-scroll">
+<footer class="footer mt-5 animate-on-scroll">
     <div class="container text-center">
-        <img src="your-logo.png" alt="Logo" class="mb-3" style="height: 50px;">
+        <img src="{{ url('/template/images/logo.png') }}" alt="Logo" class="mb-3 text-center" style="height: 150px;">
         <br>
         {!! __('content.footer') !!}
         <div class="my-3">
