@@ -122,8 +122,8 @@ class LandingPageController extends Controller
     {
         logger("$request->search");
         return view('search', [
-            "Categories" => Category::where('name', "%$request->search%")->orWhere('description', "%$request->search%")->get(),
-            "Items" => Item::where('name', "%$request->search%")->orWhere('description', "%$request->search%")->get(),
+            "Categories" => Category::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->get(),
+            "Items" => Item::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->get(),
             "AboutImage" => Image::where('id', 3)->first(),
             "MainImage10" => Image::where('id', 4)->first(),
             "MainImage9" => Image::where('id', 5)->first(),
