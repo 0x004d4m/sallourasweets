@@ -1,4 +1,4 @@
-<nav class="navbar my-0 py-0">
+<nav class="navbar px-2 my-0 py-0">
     <a class="btn btn-outline-primary p-3" id="offcanvasBtn" data-bs-toggle="offcanvas" href="#offcanvasExample"
         role="button" aria-controls="offcanvasExample">
         <span class="fa fa-bars"></span>
