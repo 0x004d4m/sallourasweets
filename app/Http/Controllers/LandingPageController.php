@@ -69,6 +69,7 @@ class LandingPageController extends Controller
             "MainImage2" => Image::where('id', 12)->first(),
             "MainImage1" => Image::where('id', 13)->first(),
             "Policy" => Policy::where('id', 1)->first(),
+            "Counters" => Counter::get(),
         ]);
     }
     public function terms(Request $request)
@@ -93,6 +94,7 @@ class LandingPageController extends Controller
             "MainImage2" => Image::where('id', 12)->first(),
             "MainImage1" => Image::where('id', 13)->first(),
             "Policy" => Policy::where('id', 2)->first(),
+            "Counters" => Counter::get(),
         ]);
     }
     public function categories(Request $request, $id)
