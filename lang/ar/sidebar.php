@@ -15,4 +15,6 @@ return [
     'branch' => 'الافرع',
     'lang' => 'اللغة',
     'images' => 'الصور',
+    'policies' => 'السياسات',
+    'counters' => 'العدادات',
 ];

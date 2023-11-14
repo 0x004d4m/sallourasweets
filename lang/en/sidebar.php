@@ -15,4 +15,6 @@ return [
     'branch' => 'branches',
     'lang' => 'Language',
     'images' => 'images',
+    'policies' => 'policies',
+    'counters' => 'counters',
 ];

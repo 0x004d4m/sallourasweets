@@ -21,6 +21,8 @@
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('image') }}'><i class='nav-icon la la-facebook'></i> {{ __('sidebar.images') }}</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('testmonial') }}'><i class='nav-icon la la-comments'></i> {{ __('sidebar.testmonial') }}</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('social') }}'><i class='nav-icon la la-facebook'></i> {{ __('sidebar.social') }}</a></li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('policy') }}'><i class='nav-icon la la-facebook'></i> {{ __('sidebar.policies') }}</a></li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('counter') }}'><i class='nav-icon la la-facebook'></i> {{ __('sidebar.counters') }}</a></li>
 
 <li class="nav-item nav-dropdown">
     <a class="nav-link nav-dropdown-toggle" href="#"><i class="nav-icon la la-globe"></i> {{ __('sidebar.lang') }}</a>
@@ -32,6 +34,3 @@
 </li>
 
 {{-- <li class='nav-item'><a class='nav-link' href='{{ backpack_url('log') }}'><i class='nav-icon la la-terminal'></i> Logs</a></li> --}}
-
-<x-backpack::menu-item title="Policies" icon="la la-question" :link="backpack_url('policy')" />
-<x-backpack::menu-item title="Counters" icon="la la-question" :link="backpack_url('counter')" />
