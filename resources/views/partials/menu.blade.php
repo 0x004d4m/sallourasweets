@@ -6,7 +6,7 @@
                 <p class="animate-on-scroll">{{ __('content.menu_text') }}</p>
             </div>
         </div>
-        <div class="row pt-5 text-center">
+        <div class="row pt-5 text-center justify-content-center">
             @foreach ($Categories as $category)
                 <div class="col-12 text-center pb-5 animate-on-scroll text-center">
                     <a href="/Categories/{{ $category->id }}">
