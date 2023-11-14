@@ -39,10 +39,10 @@ class DemoSeeder extends Seeder
             ['id' => 3, 'address' => '{"ar":"الفرع 3","en":"Branch 3"}', 'phone' => '+9620770392803', 'location' => 'https://maps.app.goo.gl/Ap54XcpmmYdfxT6X8', 'image' => 'template/images/res_img_3.jpg', ],
         ]);
         DB::table('socials')->insert([
-            ['id' => 1, 'icon' => 'icon-facebook', 'url' => 'https://facebook.com',],
-            ['id' => 2, 'icon' => 'icon-instagram', 'url' => 'https://instagram.com',],
-            ['id' => 3, 'icon' => 'icon-youtube', 'url' => 'https://youtube.com',],
-            ['id' => 4, 'icon' => 'icon-twitter', 'url' => 'https://twitter.com',],
+            ['id' => 1, 'icon' => 'fa fa-facebook', 'url' => 'https://facebook.com',],
+            ['id' => 2, 'icon' => 'fa fa-instagram', 'url' => 'https://instagram.com',],
+            ['id' => 3, 'icon' => 'fa fa-youtube', 'url' => 'https://youtube.com',],
+            ['id' => 4, 'icon' => 'fa fa-twitter', 'url' => 'https://twitter.com',],
         ]);
     }
 }
