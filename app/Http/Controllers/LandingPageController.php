@@ -25,7 +25,7 @@ class LandingPageController extends Controller
     }
     public function home(Request $request)
     {
-        return view('welcome2',[
+        return view('welcome2', [
             "Branches" => Branch::get(),
             "Categories" => Category::get(),
             "FeateredItems" => Item::where('is_featured', 1)->get(),
@@ -49,7 +49,7 @@ class LandingPageController extends Controller
     }
     public function privacy(Request $request)
     {
-        return view('policy',[
+        return view('policy', [
             "Branches" => Branch::get(),
             "Categories" => Category::get(),
             "FeateredItems" => Item::where('is_featured', 1)->get(),
@@ -74,7 +74,7 @@ class LandingPageController extends Controller
     }
     public function terms(Request $request)
     {
-        return view('policy',[
+        return view('policy', [
             "Branches" => Branch::get(),
             "Categories" => Category::get(),
             "FeateredItems" => Item::where('is_featured', 1)->get(),
@@ -99,7 +99,7 @@ class LandingPageController extends Controller
     }
     public function categories(Request $request, $id)
     {
-        return view('categories',[
+        return view('categories', [
             "Category" => Category::where('id', $id)->first(),
             "Items" => Item::where('category_id', $id)->get(),
             "Socials" => Social::get(),
@@ -114,6 +114,27 @@ class LandingPageController extends Controller
             "MainImage3" => Image::where('id', 11)->first(),
             "MainImage2" => Image::where('id', 12)->first(),
             "MainImage1" => Image::where('id', 13)->first(),
+            "Counters" => Counter::get(),
+        ]);
+    }
+
+    public function search(Request $request)
+    {
+        return view('search', [
+            "Categories" => Category::where('name', "%$request->search%")->orWhere('description', "%$request->search%")->get(),
+            "Items" => Item::where('name', "%$request->search%")->orWhere('description', "%$request->search%")->get(),
+            "AboutImage" => Image::where('id', 3)->first(),
+            "MainImage10" => Image::where('id', 4)->first(),
+            "MainImage9" => Image::where('id', 5)->first(),
+            "MainImage8" => Image::where('id', 6)->first(),
+            "MainImage7" => Image::where('id', 7)->first(),
+            "MainImage6" => Image::where('id', 8)->first(),
+            "MainImage5" => Image::where('id', 9)->first(),
+            "MainImage4" => Image::where('id', 10)->first(),
+            "MainImage3" => Image::where('id', 11)->first(),
+            "MainImage2" => Image::where('id', 12)->first(),
+            "MainImage1" => Image::where('id', 13)->first(),
+            "Socials" => Social::get(),
             "Counters" => Counter::get(),
         ]);
     }

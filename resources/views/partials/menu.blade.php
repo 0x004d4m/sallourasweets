@@ -6,9 +6,9 @@
                 <p class="animate-on-scroll">{{ __('content.menu_text') }}</p>
             </div>
         </div>
-        <div class="row pt-5">
+        <div class="row pt-5 text-center">
             @foreach ($Categories as $category)
-                <div class="col-12 text-center pb-5 animate-on-scroll">
+                <div class="col-12 text-center pb-5 animate-on-scroll text-center">
                     <a href="/Categories/{{ $category->id }}">
                         <img src="{{ url($category->image) }}" class="img-responsive" alt="{{ $category->name }}">
                         <br>
