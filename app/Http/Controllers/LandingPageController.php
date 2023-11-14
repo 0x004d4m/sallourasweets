@@ -120,6 +120,7 @@ class LandingPageController extends Controller
 
     public function search(Request $request)
     {
+        logger("$request->search");
         return view('search', [
             "Categories" => Category::where('name', "%$request->search%")->orWhere('description', "%$request->search%")->get(),
             "Items" => Item::where('name', "%$request->search%")->orWhere('description', "%$request->search%")->get(),
