@@ -9,7 +9,7 @@
         @include('partials.navbar2')
         @include('partials.slider')
         <div class="row px-5 py-5 text-center justify-content-center">
-            <div class="col-8">
+            <div class="col-10">
                 <h2 class="heading to-animate">{{ $Policy->name }}</h2>
                 <p class="sub-heading to-animate">{!! $Policy->text !!}</p>
             </div>
