@@ -27,4 +27,5 @@ return [
     'privacies' => 'سياسة الخصوصية',
     'About' => 'من نحن',
     'about_title' => 'من نحن',
+    'testmonials' => 'اراء العملاء',
 ];
