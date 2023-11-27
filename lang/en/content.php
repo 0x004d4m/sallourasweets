@@ -27,4 +27,5 @@ return [
     'privacies' => 'Privacy Policy',
     'terms' => 'Terms And Conditions',
     'Videos' => 'Videos',
+    'testmonials' => 'Testmonials',
 ];
