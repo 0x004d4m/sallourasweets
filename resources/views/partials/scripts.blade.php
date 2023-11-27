@@ -23,7 +23,7 @@
             let range = end - start;
             let current = start;
             let increment = end > start ? 1 : -1;
-            let stepTime = Math.abs(Math.floor(duration / range));
+            let stepTime = duration;
             let obj = document.getElementById(id).getElementsByTagName('h1')[0];
 
             let timer = setInterval(() => {
