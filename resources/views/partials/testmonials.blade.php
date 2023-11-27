@@ -48,7 +48,7 @@
                             @endif
                         @endforeach
                     </div>
-
+                    <div id="observedElement"></div>
                     <!-- Carousel controls -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
                         <i class="fa fa-angle-left fa-2x text-dark" aria-hidden="true"></i>

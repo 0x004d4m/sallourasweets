@@ -47,7 +47,7 @@
         });
     });
 
-    let elementToObserve = document.getElementById('about');
+    let elementToObserve = document.getElementById('observedElement');
     observer.observe(elementToObserve);
 </script>
 <script>
