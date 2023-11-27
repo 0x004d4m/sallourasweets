@@ -26,4 +26,5 @@ return [
     'see_more' => 'See More',
     'privacies' => 'Privacy Policy',
     'terms' => 'Terms And Conditions',
+    'Videos' => 'Videos',
 ];

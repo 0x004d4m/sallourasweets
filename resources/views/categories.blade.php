@@ -12,18 +12,16 @@
             <h1 class="text-center">{{ $Category->name }}</h1>
             <p class="text-center">{{ $Category->description }}</p>
             <div class="col-12">
-                @foreach ($Items->chunk(3) as $chunk)
-                    <div class="row justify-content-center text-center">
-                        @foreach ($chunk as $item)
-                            <div class="col-md-4 text-center p-3">
-                                <img src="{{ url($item->image) }}" class="img-fluid rounded"
-                                        alt="{{ $item->name }}">
-                                <h3 class=" pt-3">{{ $item->name }}</h3>
-                                <h3>{{ $item->price }} {{ __('content.currency') }}</h3>
-                            </div>
-                        @endforeach
-                    </div>
-                @endforeach
+                <div class="row justify-content-center text-center">
+                    @foreach ($Items as $item)
+                        <div class="col-md-4 col-6 text-center p-3">
+                            <img src="{{ url($item->image) }}" class="img-fluid rounded"
+                                    alt="{{ $item->name }}">
+                            <h3 class=" pt-3">{{ $item->name }}</h3>
+                            <h3>{{ $item->price }} {{ __('content.currency') }}</h3>
+                        </div>
+                    @endforeach
+                </div>
             </div>
         </div>
         @include('partials.footer')

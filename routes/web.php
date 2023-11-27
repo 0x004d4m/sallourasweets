@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/set-language/{locale}', [LandingPageController::class, 'setLanguage'])->name('set-language');
 Route::get('/', [LandingPageController::class, 'home'])->name('home');
 Route::get('/privacy', [LandingPageController::class, 'privacy'])->name('privacy');
+Route::get('/videos', [LandingPageController::class, 'videos'])->name('videos');
 Route::get('/terms', [LandingPageController::class, 'terms'])->name('terms');
 Route::get('/Categories/{id}', [LandingPageController::class, 'categories'])->name('categories');
 Route::get('/Search', [LandingPageController::class, 'search'])->name('search');

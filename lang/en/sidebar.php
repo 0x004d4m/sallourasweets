@@ -17,4 +17,5 @@ return [
     'images' => 'images',
     'policies' => 'policies',
     'counters' => 'counters',
+    'video' => 'videos',
 ];

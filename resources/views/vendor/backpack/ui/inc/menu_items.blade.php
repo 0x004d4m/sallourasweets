@@ -23,6 +23,7 @@
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('social') }}'><i class='nav-icon la la-facebook'></i> {{ __('sidebar.social') }}</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('policy') }}'><i class='nav-icon la la-facebook'></i> {{ __('sidebar.policies') }}</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('counter') }}'><i class='nav-icon la la-facebook'></i> {{ __('sidebar.counters') }}</a></li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('video') }}'><i class='nav-icon la la-play'></i> {{ __('sidebar.video') }}</a></li>
 
 <li class="nav-item nav-dropdown">
     <a class="nav-link nav-dropdown-toggle" href="#"><i class="nav-icon la la-globe"></i> {{ __('sidebar.lang') }}</a>

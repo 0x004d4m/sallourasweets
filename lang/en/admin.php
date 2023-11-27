@@ -28,4 +28,6 @@ return [
     'text' => 'text',
     'counter' => 'counter',
     'counters' => 'counters',
+    'video' => 'video',
+    'videos' => 'videos',
 ];

@@ -22,6 +22,8 @@
                     <li class="nav-item"><a type="button" class="nav-link"
                             href="{{ url('/#features') }}">{{ __('content.Features') }}</a></li>
                     <li class="nav-item"><a type="button" class="nav-link"
+                            href="/videos">{{ __('content.Videos') }}</a></li>
+                    <li class="nav-item"><a type="button" class="nav-link"
                             href="{{ url('/#about') }}">{{ __('content.About') }}</a></li>
                 </ul>
             </div>
