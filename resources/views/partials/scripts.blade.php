@@ -35,10 +35,10 @@
             }, stepTime);
         }
 
-        animateCounter('counter1', 0, {{ $Counters[0]->counter }}, 3000);
-        animateCounter('counter2', 0, {{ $Counters[1]->counter }}, 3000);
-        animateCounter('counter3', 0, {{ $Counters[2]->counter }}, 3000);
-        animateCounter('counter4', 0, {{ $Counters[3]->counter }}, 3000);
+        animateCounter('counter1', 0, {{ $Counters[0]->counter }}, 30);
+        animateCounter('counter2', 0, {{ $Counters[1]->counter }}, 30);
+        animateCounter('counter3', 0, {{ $Counters[2]->counter }}, 30);
+        animateCounter('counter4', 0, {{ $Counters[3]->counter }}, 30);
     });
 </script>
 <script>
