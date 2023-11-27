@@ -8,7 +8,7 @@
         </div>
         <div class="row pt-5 text-center justify-content-center">
             @foreach ($Categories as $category)
-                <div class="col-12 text-center pb-5 animate-on-scroll text-center">
+                <div class="col-md-4 col-6 text-center pb-5 animate-on-scroll text-center">
                     <a href="/Categories/{{ $category->id }}">
                         <img src="{{ url($category->image) }}" class="img-fluid rounded" alt="{{ $category->name }}">
                         <br>
