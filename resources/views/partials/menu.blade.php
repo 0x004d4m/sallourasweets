@@ -1,4 +1,4 @@
-<div class="row p-5 bg-y" id="menu">
+<div class="row p-5" id="menu">
     <div class="col-12">
         <div class="row">
             <div class="col-12 text-center">

@@ -1,4 +1,4 @@
-<div class="row px-5 py-5 bg-y" id="features">
+<div class="row px-5 py-5" id="features">
     <div class="col-12">
         <div class="row text-center justify-content-center animate-on-scroll">
             <div class="col-md-12">
