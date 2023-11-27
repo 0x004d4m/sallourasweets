@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('testmonials', function (Blueprint $table) {
             $table->integer('stars')->default(5);
-            $table->text('image');
+            $table->text('image')->nullable();
         });
     }
 
