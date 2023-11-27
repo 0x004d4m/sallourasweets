@@ -1,6 +1,6 @@
 <div id="row px-5 py-5">
-    <h2 class="text-center">{{ __('content.testmonials') }}</h2>
     <div class="col-12">
+        <h2 class="text-center">{{ __('content.testmonials') }}</h2>
         <div id="cardCarousel" class="carousel carousel-dark slide animate-on-scroll" data-bs-ride="carousel" data-bs-touch="true">
             <div class="row justify-content-center">
                 <div class="col-10 col-md-6">
