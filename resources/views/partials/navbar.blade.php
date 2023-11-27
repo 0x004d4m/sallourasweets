@@ -1,4 +1,14 @@
-<nav class="navbar px-2 my-0 py-0">
+<nav class="navbar px-2 my-0 py-0 d-flex align-content-start">
+    <div>
+        <a class="btn-outline-primary" id="offcanvasBtn" data-bs-toggle="offcanvas" href="#offcanvasExample"
+            role="button" aria-controls="offcanvasExample">
+            <span class="fa fa-bars"></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch"
+            aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle search" style="border: none;">
+            <span class="fa fa-search text-primary"></span>
+        </button>
+    </div>
     <div class="offcanvas @if (Backpack\LangFileManager\app\Models\Language::where('active', 1)->where('abbr', Session::get('locale'))->first()->abbr == 'ar') offcanvas-end @else offcanvas-start @endif" tabindex="-1"
         id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
@@ -31,19 +41,6 @@
             </div>
         </div>
     </div>
-
-    <a class="navbar-brand mx-auto my-0 py-0" href="{{ url('/') }}">
-        <img src="{{ url('/template/images/logo.png') }}" alt="Logo">
-    </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch"
-        aria-controls="navbarSearch" aria-expanded="false" aria-label="Toggle search" style="border: none;">
-        <span class="fa fa-search text-primary"></span>
-    </button>
-    <a class="btn-outline-primary" id="offcanvasBtn" data-bs-toggle="offcanvas" href="#offcanvasExample"
-        role="button" aria-controls="offcanvasExample">
-        <span class="fa fa-bars"></span>
-    </a>
 
     <div class="collapse navbar-collapse p-3" id="navbarSearch">
         <form class="d-flex" action="{{ url('/Search') }}">

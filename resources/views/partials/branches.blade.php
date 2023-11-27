@@ -6,9 +6,9 @@
                 <p class="sub-heading">{{ __('content.branches_text') }}</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             @foreach ($Branches as $branch)
-                <div class="col-md-4 animate-on-scroll">
+                <div class="col-6 col-md-4 animate-on-scroll mb-2">
                     <div class="card">
                         <div class="card-body text-center">
                             <h3>{{ $branch->address }}</h3>

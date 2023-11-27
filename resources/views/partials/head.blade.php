@@ -27,10 +27,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
         :root {
-            --bs-primary: #fb6e14;
+            --bs-primary: rgb(152, 1, 19);
             /* Your new primary color */
-            --bs-primary-rgb: 251, 108, 19;
+            --bs-primary-rgb: 152, 1, 19;
             /* Your new primary color */
+        }
+
+        h2 {
+            color: rgb(152, 1, 19);
+            position: relative;
+            display: inline-block;
+            padding-top: 10px; /* Padding above text */
+            padding-bottom: 10px; /* Padding below text */
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 70%; /* 50% of the element's width */
+            height: 2px; /* Thickness of the underline */
+            background-color: rgb(152, 1, 19); /* Color of the underline */
+            margin: 0 auto; /* Center the line */
+        }
+
+        hr{
+            color: rgb(152, 1, 19);
+            height:2px;
+            border-width:3px;
+            width: 70px
         }
 
         .btn-primary,
@@ -85,13 +111,22 @@
         }
 
         .bg-y {
-            background-image: url('{{ url('template/images/yellow.jpg') }}');
+            background-image: url('{{ url('template/images/red.jpg') }}');
         }
 
         .navbar {
-            background-image: url('{{ url('template/images/red.jpg') }}');
+            background-image: url('{{ url('template/images/yellow2.jpg') }}');
             /* Add your background image URL here */
-            background-repeat: repeat;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 250px;
+        }
+
+        @media (max-width:801px) {
+            .navbar {
+                height: 120px;
+            }
         }
 
         .navbar-brand img {
@@ -101,7 +136,7 @@
         }
 
         .footer {
-            background-image: url('{{ url('template/images/red.jpg') }}');
+            background-image: url('{{ url('template/images/yellow.jpg') }}');
             /* Add your background image URL here */
             background-repeat: repeat;
             color: white;
