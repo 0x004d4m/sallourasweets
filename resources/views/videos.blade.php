@@ -7,8 +7,7 @@
 <body @if (Backpack\LangFileManager\app\Models\Language::where('active', 1)->where('abbr', Session::get('locale'))->first()->abbr == 'ar') dir="rtl" @else dir="ltr" @endif>
     <div class="container-fluid">
         @include('partials.navbar2')
-        @include('partials.slider')
-        <div class="row px-5 py-5 text-center justify-content-center">
+        <div class="row py-5 text-center justify-content-center">
             @foreach ($Videos as $Video)
                 <div class="col-12 col-md-4 mb-2">
                     <div class="card">
