@@ -18,28 +18,37 @@
 </script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        function animateCounter(id, start, end, duration) {
-            let range = end - start;
-            let current = start;
-            let increment = end > start ? 1 : -1;
-            let stepTime = duration;
-            let obj = document.getElementById(id).getElementsByTagName('h1')[0];
+    function animateCounter(id, start, end, duration) {
+        let range = end - start;
+        let current = start;
+        let increment = end > start ? 1 : -1;
+        let stepTime = duration;
+        let obj = document.getElementById(id).getElementsByTagName('h1')[0];
 
-            let timer = setInterval(() => {
-                current += increment;
-                obj.textContent = current;
-                if (current == end) {
-                    clearInterval(timer);
-                }
-            }, stepTime);
-        }
+        let timer = setInterval(() => {
+            current += increment;
+            obj.textContent = current;
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
 
-        animateCounter('counter1', 0, {{ $Counters[0]->counter }}, 30);
-        animateCounter('counter2', 0, {{ $Counters[1]->counter }}, 600);
-        animateCounter('counter3', 0, {{ $Counters[2]->counter }}, 90);
-        animateCounter('counter4', 0, {{ $Counters[3]->counter }}, 40);
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter('counter1', 0, {{ $Counters[0]->counter }}, 40);
+                animateCounter('counter2', 0, {{ $Counters[1]->counter }}, 90);
+                animateCounter('counter3', 0, {{ $Counters[2]->counter }}, 600);
+                animateCounter('counter4', 0, {{ $Counters[3]->counter }}, 30);
+
+                observer.unobserve(entry.target);
+            }
+        });
     });
+
+    let elementToObserve = document.getElementById('observedElement');
+    observer.observe(elementToObserve);
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
