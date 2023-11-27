@@ -9,7 +9,7 @@
         <div class="row justify-content-center">
             @foreach ($FeateredItems as $key => $item)
                 @if ($key % 2 == 0)
-                    <div class="col-md-6 animate-on-scroll">
+                    <div class="col-6 animate-on-scroll">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4 text-center">
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                 @else
-                    <div class="col-md-6 animate-on-scroll">
+                    <div class="col-6 animate-on-scroll">
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-8">
