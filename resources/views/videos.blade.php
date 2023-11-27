@@ -10,7 +10,7 @@
         @include('partials.slider')
         <div class="row px-5 py-5 text-center justify-content-center">
             @foreach ($Videos as $Video)
-                <div class="col-md-4 col-6">
+                <div class="col-12 col-md-4 mb-2">
                     <div class="card">
                         <div class="card-body">
                             <iframe style='width: 100%;' src="https://www.youtube.com/embed/{{ $Video->url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

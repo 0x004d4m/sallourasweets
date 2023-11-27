@@ -1,4 +1,4 @@
-<nav class="navbar px-2 my-0 py-0">
+<nav class="navbar px-2 my-0 py-0 d-flex align-content-start">
     <div>
         <a class="btn-outline-primary" id="offcanvasBtn" data-bs-toggle="offcanvas" href="#offcanvasExample"
             role="button" aria-controls="offcanvasExample">
