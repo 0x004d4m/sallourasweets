@@ -61,4 +61,48 @@
             </div>
         </div>
     </div>
+    <div class="col-12 mt-5 animate-on-scroll">
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="counter" id="counter1">
+                            <p>{{ $Counters[0]->name }}</p>
+                            <h1>0</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="counter" id="counter2">
+                            <p>{{ $Counters[1]->name }}</p>
+                            <h1>0</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="counter" id="counter3">
+                            <p>{{ $Counters[2]->name }}</p>
+                            <h1>0</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="counter" id="counter4">
+                            <p>{{ $Counters[3]->name }}</p>
+                            <h1>0</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
