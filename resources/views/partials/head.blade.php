@@ -139,7 +139,7 @@
             background-image: url('{{ url('template/images/yellow.jpg') }}');
             /* Add your background image URL here */
             background-repeat: repeat;
-            color: white;
+            color: black;
             /* Adjust text color as needed */
         }
     </style>
