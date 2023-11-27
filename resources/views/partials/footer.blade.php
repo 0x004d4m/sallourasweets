@@ -9,9 +9,9 @@
             @endforeach
         </div>
         <div class="text-center">
-            <a href="{{ url('privacy') }}" class="text-white text-center">{!! __('content.privacies') !!}</a>
+            <a href="{{ url('privacy') }}" class="text-black text-center">{!! __('content.privacies') !!}</a>
             <br>
-            <a href="{{ url('terms') }}" class="text-white text-center">{!! __('content.terms') !!}</a>
+            <a href="{{ url('terms') }}" class="text-black text-center">{!! __('content.terms') !!}</a>
         </div>
     </div>
 </footer>
