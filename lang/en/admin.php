@@ -30,4 +30,5 @@ return [
     'counters' => 'counters',
     'video' => 'video',
     'videos' => 'videos',
+    'stars' => 'Stars',
 ];

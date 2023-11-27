@@ -24,6 +24,8 @@ class TestmonialCrudController extends CrudController
     {
         $this->crud->column('name')->type('text')->label(__('admin.name'));
         $this->crud->column('description')->type('text')->label(__('admin.description'));
+        $this->crud->column('image')->type('image')->label(__('admin.image'));
+        $this->crud->column('stars')->type('text')->label(__('admin.stars'));
     }
 
     protected function setupCreateOperation()
@@ -32,6 +34,8 @@ class TestmonialCrudController extends CrudController
 
         $this->crud->field('name')->type('text')->label(__('admin.name'));
         $this->crud->field('description')->type('text')->label(__('admin.description'));
+        $this->crud->field('image')->type('image')->label(__('admin.image'));
+        $this->crud->field('stars')->type('text')->label(__('admin.stars'));
     }
 
     protected function setupUpdateOperation()

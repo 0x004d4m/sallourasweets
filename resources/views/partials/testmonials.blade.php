@@ -2,38 +2,45 @@
     <div class="col-12">
         <div id="cardCarousel" class="carousel carousel-dark slide animate-on-scroll" data-bs-ride="carousel" data-bs-touch="true">
             <div class="row justify-content-center">
-                <div class="col-10">
-                    <!-- Carousel indicators -->
-                    <div class="carousel-indicators">
-                        @foreach ($Testmonials as $key=>$testmonial)
-                            @if ($key == 0)
-                                <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="{{ $key }}" class="active" aria-current="true"
-                                    aria-label="Slide {{ $key +1}}"></button>
-                            @else
-                                <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="{{ $key }}" aria-label="Slide {{ $key +1}}"></button>
-                            @endif
-
-                        @endforeach
-                    </div>
-
+                <div class="col-10 col-md-6">
                     <!-- Carousel items -->
                     <div class="carousel-inner">
                         @foreach ($Testmonials as $key=>$testmonial)
                             @if ($key == 0)
                                 <div class="carousel-item active">
                                     <div class="card">
-                                        <div class="card-body text-center mb-5">
-                                            <p class="card-text">{{ $testmonial->description }}</p>
-                                            <p class="text-dark">&mdash; {{ $testmonial->name }}</p>
+                                        <div class="card-body mb-5">
+                                            <div class="row">
+                                                <div class="col-2 text-center">
+                                                    <img src="{{ $testmonial->image }}" class="img-fluid rounded-circle" style="height:75px">
+                                                </div>
+                                                <div class="col-10">
+                                                    <p class="text-dark">&mdash; {{ $testmonial->name }}</p>
+                                                    @for ($i=0;$i<$testmonial->stars;$i++)
+                                                            <i class="fa fa-star" style="color: gold;"></i>
+                                                    @endfor
+                                                    <p class="card-text">{{ $testmonial->description }}</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             @else
                                 <div class="carousel-item">
                                     <div class="card">
-                                        <div class="card-body text-center mb-5">
-                                            <p class="card-text">{{ $testmonial->description }}</p>
-                                            <p class="text-dark">&mdash; {{ $testmonial->name }}</p>
+                                        <div class="card-body mb-5">
+                                            <div class="row">
+                                                <div class="col-2 text-center">
+                                                    <img src="{{ $testmonial->image }}" class="img-fluid rounded-circle" style="height:75px">
+                                                </div>
+                                                <div class="col-10">
+                                                    <p class="text-dark">&mdash; {{ $testmonial->name }}</p>
+                                                    @for ($i=0;$i<$testmonial->stars;$i++)
+                                                            <i class="fa fa-star" style="color: gold;"></i>
+                                                    @endfor
+                                                    <p class="card-text">{{ $testmonial->description }}</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
