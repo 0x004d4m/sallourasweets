@@ -115,7 +115,7 @@
         }
 
         .navbar {
-            background-image: url('{{ url('template/images/yellow3.jpg') }}');
+            background-image: url('{{ url('template/images/yellow4.jpg') }}');
             /* Add your background image URL here */
             background-repeat: no-repeat;
             background-position: center;
