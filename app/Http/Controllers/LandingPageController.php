@@ -167,10 +167,10 @@ class LandingPageController extends Controller
     public function search(Request $request)
     {
         logger("$request->search");
-        logger(mb_convert_encoding("$request->search", 'UTF-16LE', 'UTF-8'));
+        logger(mb_convert_encoding("$request->search", 'UTF-8'));
         return view('search', [
-            "Categories" => Category::where('name', 'LIKE', "%". mb_convert_encoding("$request->search", 'utf8mb4_bin')."%")->orWhere('description', 'LIKE', "%" . mb_convert_encoding("$request->search", 'utf8mb4_bin') . "%")->get(),
-            "Items" => Item::where('name', 'LIKE', "%" . mb_convert_encoding("$request->search", 'utf8mb4_bin') . "%")->orWhere('description', 'LIKE', "%" . mb_convert_encoding("$request->search", 'utf8mb4_bin') . "%")->get(),
+            "Categories" => Category::where('name', 'LIKE', "%". mb_convert_encoding("$request->search", 'UTF-8')."%")->orWhere('description', 'LIKE', "%" . mb_convert_encoding("$request->search", 'UTF-8') . "%")->get(),
+            "Items" => Item::where('name', 'LIKE', "%" . mb_convert_encoding("$request->search", 'UTF-8') . "%")->orWhere('description', 'LIKE', "%" . mb_convert_encoding("$request->search", 'UTF-8') . "%")->get(),
             "AboutImage" => Image::where('id', 3)->first(),
             "MainImage10" => Image::where('id', 4)->first(),
             "MainImage9" => Image::where('id', 5)->first(),
