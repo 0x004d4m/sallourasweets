@@ -20,4 +20,5 @@ Route::get('/privacy', [LandingPageController::class, 'privacy'])->name('privacy
 Route::get('/videos', [LandingPageController::class, 'videos'])->name('videos');
 Route::get('/terms', [LandingPageController::class, 'terms'])->name('terms');
 Route::get('/Categories/{id}', [LandingPageController::class, 'categories'])->name('categories');
+Route::get('/Products/{id}', [LandingPageController::class, 'product'])->name('product');
 Route::get('/Search', [LandingPageController::class, 'search'])->name('search');

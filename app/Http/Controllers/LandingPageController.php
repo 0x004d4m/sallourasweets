@@ -144,6 +144,25 @@ class LandingPageController extends Controller
             "Counters" => Counter::get(),
         ]);
     }
+    public function product(Request $request, $id)
+    {
+        return view('product', [
+            "Product" => Item::where('id', $id)->first(),
+            "Socials" => Social::get(),
+            "AboutImage" => Image::where('id', 3)->first(),
+            "MainImage10" => Image::where('id', 4)->first(),
+            "MainImage9" => Image::where('id', 5)->first(),
+            "MainImage8" => Image::where('id', 6)->first(),
+            "MainImage7" => Image::where('id', 7)->first(),
+            "MainImage6" => Image::where('id', 8)->first(),
+            "MainImage5" => Image::where('id', 9)->first(),
+            "MainImage4" => Image::where('id', 10)->first(),
+            "MainImage3" => Image::where('id', 11)->first(),
+            "MainImage2" => Image::where('id', 12)->first(),
+            "MainImage1" => Image::where('id', 13)->first(),
+            "Counters" => Counter::get(),
+        ]);
+    }
 
     public function search(Request $request)
     {
