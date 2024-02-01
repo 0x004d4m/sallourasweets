@@ -21,10 +21,15 @@
             @endforeach
             @foreach ($Items as $item)
                 <div class="col-md-4 text-center p-3">
-                    <img src="{{ url($item->image) }}" class="img-fluid rounded"
-                            alt="{{ $item->name }}">
-                    <h3 class=" pt-3">{{ $item->name }}</h3>
-                    <h3>{{ $item->price }} {{ __('content.currency') }}</h3>
+                    <a href="/Products/{{ $item->id }}">
+                        <img src="{{ url($item->image) }}" class="img-fluid rounded" alt="{{ $item->name }}">
+                    </a>
+                    <a href="/Products/{{ $item->id }}">
+                        <h3 class=" pt-3">{{ $item->name }}</h3>
+                    </a>
+                    <a href="/Products/{{ $item->id }}">
+                        <h3>{{ $item->price }} {{ __('content.currency') }}</h3>
+                    </a>
                 </div>
             @endforeach
         </div>
