@@ -167,13 +167,10 @@ class LandingPageController extends Controller
     public function search(Request $request)
     {
         logger("$request->search");
-        logger(Category::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->toSql());
-        logger(Category::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->getBindings());
-        logger(Item::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->toSql());
-        logger(Item::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->getBindings());
+        logger(mb_convert_encoding("$request->search", 'UTF-16LE', 'UTF-8'));
         return view('search', [
-            "Categories" => Category::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->get(),
-            "Items" => Item::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->get(),
+            "Categories" => Category::where('name', 'LIKE', "%". mb_convert_encoding("$request->search", 'UTF-16LE', 'UTF-8')."%")->orWhere('description', 'LIKE', "%" . mb_convert_encoding("$request->search", 'UTF-16LE', 'UTF-8') . "%")->get(),
+            "Items" => Item::where('name', 'LIKE', "%" . mb_convert_encoding("$request->search", 'UTF-16LE', 'UTF-8') . "%")->orWhere('description', 'LIKE', "%" . mb_convert_encoding("$request->search", 'UTF-16LE', 'UTF-8') . "%")->get(),
             "AboutImage" => Image::where('id', 3)->first(),
             "MainImage10" => Image::where('id', 4)->first(),
             "MainImage9" => Image::where('id', 5)->first(),
