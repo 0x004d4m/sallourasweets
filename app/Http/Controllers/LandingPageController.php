@@ -167,6 +167,10 @@ class LandingPageController extends Controller
     public function search(Request $request)
     {
         logger("$request->search");
+        logger(Category::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->toSql());
+        logger(Category::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->getBindings());
+        logger(Item::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->toSql());
+        logger(Item::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->getBindings());
         return view('search', [
             "Categories" => Category::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->get(),
             "Items" => Item::where('name', 'LIKE', "%$request->search%")->orWhere('description', 'LIKE', "%$request->search%")->get(),
