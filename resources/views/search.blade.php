@@ -8,6 +8,7 @@
     <div class="container-fluid">
         @include('partials.navbar2')
         <div class="row px-5 py-5 text-center justify-content-center">
+            {{ $Categories }}
             @foreach ($Categories as $category)
                 <div class="col-md-4 text-center p-3">
                     <a href="/Categories/{{ $category->id }}">
@@ -19,6 +20,7 @@
                     <a href="/Categories/{{ $category->id }}" class="btn btn-primary">{{ __('content.see_more') }}</a>
                 </div>
             @endforeach
+            {{ $Items }}
             @foreach ($Items as $item)
                 <div class="col-md-4 text-center p-3">
                     <a href="/Products/{{ $item->id }}">
