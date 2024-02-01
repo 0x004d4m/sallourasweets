@@ -167,8 +167,8 @@ class LandingPageController extends Controller
     public function search(Request $request)
     {
         return view('search', [
-            "Categories" => Category::whereJsonContains('name->ar', $request->search)->orWhereJsonContains('description->ar', $request->search)->get(),
-            "Items" => Item::whereJsonContains('name->ar', $request->search)->orWhereJsonContains('description->ar', $request->search)->get(),
+            "Categories" => Category::where('name->ar', $request->search)->orWhere('description->ar', $request->search)->get(),
+            "Items" => Item::where('name->ar', $request->search)->orWhere('description->ar', $request->search)->get(),
             "AboutImage" => Image::where('id', 3)->first(),
             "MainImage10" => Image::where('id', 4)->first(),
             "MainImage9" => Image::where('id', 5)->first(),
