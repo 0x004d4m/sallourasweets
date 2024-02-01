@@ -167,10 +167,10 @@ class LandingPageController extends Controller
     public function search(Request $request)
     {
         logger("$request->search");
-        logger(mb_convert_encoding("$request->search", 'UTF-8'));
+        logger(json_encode($request->search));
         return view('search', [
-            "Categories" => Category::where('name', 'LIKE', "%". mb_convert_encoding("$request->search", 'UTF-8')."%")->orWhere('description', 'LIKE', "%" . mb_convert_encoding("$request->search", 'UTF-8') . "%")->get(),
-            "Items" => Item::where('name', 'LIKE', "%" . mb_convert_encoding("$request->search", 'UTF-8') . "%")->orWhere('description', 'LIKE', "%" . mb_convert_encoding("$request->search", 'UTF-8') . "%")->get(),
+            "Categories" => Category::where('name', 'LIKE', "%". json_encode($request->search)."%")->orWhere('description', 'LIKE', "%" . json_encode($request->search) . "%")->get(),
+            "Items" => Item::where('name', 'LIKE', "%" . json_encode($request->search) . "%")->orWhere('description', 'LIKE', "%" . json_encode($request->search) . "%")->get(),
             "AboutImage" => Image::where('id', 3)->first(),
             "MainImage10" => Image::where('id', 4)->first(),
             "MainImage9" => Image::where('id', 5)->first(),
