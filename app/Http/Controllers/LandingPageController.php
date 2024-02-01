@@ -166,11 +166,9 @@ class LandingPageController extends Controller
 
     public function search(Request $request)
     {
-        logger("$request->search");
-        logger(json_encode($request->search));
         return view('search', [
-            "Categories" => Category::where('name', 'LIKE', "%". json_encode($request->search)."%")->orWhere('description', 'LIKE', "%" . json_encode($request->search) . "%")->get(),
-            "Items" => Item::where('name', 'LIKE', "%" . json_encode($request->search) . "%")->orWhere('description', 'LIKE', "%" . json_encode($request->search) . "%")->get(),
+            "Categories" => Category::whereJsonContains('name', json_encode($request->search))->orWhereJsonContains('description', json_encode($request->search))->get(),
+            "Items" => Item::whereJsonContains('name', json_encode($request->search))->orWhereJsonContains('description', json_encode($request->search))->get(),
             "AboutImage" => Image::where('id', 3)->first(),
             "MainImage10" => Image::where('id', 4)->first(),
             "MainImage9" => Image::where('id', 5)->first(),
